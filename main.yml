@@ -1,5 +1,6 @@
 ---
 - hosts: all
+  strategy: debug
   connection: local
 
   vars_files:
@@ -20,7 +21,9 @@
     - role: geerlingguy.mas
       when: mas_installed_apps
       tags: ['mas']
-
+    - role: viasite-ansible.zsh
+      tags: ['zsh']
+      
   tasks:
     - include_tasks: tasks/ansible-setup.yml
 
