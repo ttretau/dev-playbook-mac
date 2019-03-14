@@ -69,6 +69,7 @@ homebrew_cask_apps:
   - iterm2
   - font-hack-nerd-font
   - postman
+  - groovy
 
 # See `geerlingguy.mas` role documentation for usage instructions.
 mas_installed_apps: []
@@ -77,14 +78,21 @@ mas_password: ""
 
 osx_script: "~/.osx --no-restart"
 
-zsh_antigen_bundles_extras:
-      - nvm
-      - joel-porquet/zsh-dircolors-solarized
-      - kubectl
-zsh_autosuggestions_bind_key: "^U"
-zsh_mc_solarized_skin: yes
-zsh_user_group: "admin"
-zsh_user: "ka2621"
+ohmyzsh_default_theme: powerlevel9k/powerlevel9k
+ohmyzsh_default_plugins:
+  - tmux
+  - ssh-agent
+  - kubectl
+  - docker
+  - zsh-nvm
+  - cp
+  - comand-not-found
+  - gnu-utils
+  - history
+  - python
+  - pip
+  - git
+  - git-extras
 
 # Install packages from other package managers.
 # Note: You are responsible for making sure the required package managers are

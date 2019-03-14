@@ -2,4 +2,6 @@
 - name: geerlingguy.dotfiles
 - name: geerlingguy.homebrew
 - name: geerlingguy.mas
-- name: viasite-ansible.zsh
+- name: drew-kun.homebrew
+- src: https://github.com/ttretau/ansible-ohmyzsh
+  name: drew-kun.ohmyzsh
